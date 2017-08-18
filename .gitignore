@@ -21,11 +21,11 @@ includes/*
 
 media/*
 # If you'd like to commit media files, replace the above with the following:
-# media/catalog/product/cache
+media/catalog/product/cache
 # media/css
-# media/css_secure
+media/css_secure
 # media/js
-# media/js_secure
+media/js_secure
 
 
 # I use a global gitignore file for the following, but worth noting these:
