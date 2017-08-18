@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+	<default>
+		<reference name="root">
+
+		</reference>
+
+		<reference name="head">
+			<!-- Adding Bootstrap & CSS -->
+			<action method="addCss"><stylesheet>css/bootstrap/bootstrap.min.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/bootstrap/bootstrap-theme.min.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
+
+
+			<!-- Adding JS -->
+			<action method="addItem"><type>skin_js</type><script>js/bootstrap/bootstrap.js</script>
+			</action>
+			<action method="addItem"><type>skin_js</type><script>js/bootstrap/npm.js</script>.</action>
+			<action method="addItem"><type>skin_js</type><script>js/jquery-3.2.1.min.js</script></action>
+			<action method="addItem"><type>skin_js</type><script>js/scripts.js</script></action>
+
+			<!-- Owl Carousel -->
+			<action method="addItem"><type>skin_js</type><script>js/owlcarousel/owl.carousel.min.js</script></action>
+			<action method="addCss"><stylesheet>css/owlcarousel/owl.carousel.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/owlcarousel/owl.carousel.min.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/owlcarousel/owl.theme.default.min.css</stylesheet></action>
+			
+		</reference>
+
+		<reference name="header">
+			<block type="core/template" method="addblock" as="slider" name="slider" template="" after="-">
+
+			</block>
+		</reference>
+
+	</default>
+</layout>
