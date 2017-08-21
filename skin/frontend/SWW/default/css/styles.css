@@ -45,11 +45,12 @@ span.welcome-msg.top-msg {
     text-align: center;
 }
 .tile-block-2 {
-    bottom: 20%;
+    bottom: 40%;
     display: block;
     margin: 0 auto;
     width: 100%;
     text-align: center;
+    position: absolute;
 }
 
 /*Buttons*/
@@ -109,6 +110,12 @@ div#header1-menu {
 #header1-menu .nav-container #nav li {
 	display: table-cell;
 	padding: 5px; 
+}
+.level-top ul {
+    display: block;
+    /*z-index: 1000;*/
+    position: absolute;
+    padding-left: 11px;
 }
 
 /*Footer*/
