@@ -1,8 +1,21 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+
 body {
 	overflow-x: hidden;
 }
 header {
 	display: block;
+}
+/*Menu*/
+a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300; 
+}
+p, h1, h2, h3, h4 {
+	font-family: 'Merriweather', serif !important;
+	font-weight: 300; 
 }
 
 /*Header*/
@@ -44,6 +57,11 @@ span.welcome-msg.top-msg {
     width: 100%;
     text-align: center;
 }
+
+.tile-block-1 h2,h3,h4 {
+	background-color: white; 
+}
+
 .tile-block-2 {
     bottom: 40%;
     display: block;
@@ -114,8 +132,8 @@ div#header1-menu {
 .level-top ul {
     display: block;
     /*z-index: 1000;*/
-    position: absolute;
-    padding-left: 11px;
+    position: absolute
+;    padding-left: 11px;
 }
 
 /*Footer*/
@@ -133,3 +151,4 @@ div#header1-menu {
 .no-pad-left {
 	padding-left: 0 !important; 
 }
+

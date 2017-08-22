@@ -1,0 +1,65 @@
+$bgColor: #212121;
+$buttonColorNoHover: transparent;
+$buttonColorHover: #e7f5ff;
+$outlineColorNoHover: #7ac4fe;
+$outlineColorHover: #3992ff;
+$fontColorNoHover: $outlineColorNoHover;
+$fontColorHover: $outlineColorHover;
+
+$triangleSize: 9px;
+$triangleColor: $outlineColorHover;
+$triangleSide: $triangleSize solid transparent;
+$triangleBase: $triangleSize solid $triangleColor;
+
+$transition: all 0.2s ease-in-out;
+
+.button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $buttonColorNoHover;
+  border: 4px solid $outlineColorNoHover;
+  border-radius: 9px;
+  transition: $transition;
+  cursor: pointer;
+
+  /* Button text */
+  .button-text {
+    display: inline-block;
+    padding: 10px 15px;
+    font-family: "Open Sans", sans-serif;
+    color: $fontColorNoHover;
+    transition: $transition;
+
+    /* Hover arrow */
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: sub;
+      margin-left: -$triangleSize;
+      border-top: $triangleSide;
+      border-bottom: $triangleSide;
+      border-left: $triangleBase;
+      opacity: 0;
+      transition: $transition;
+    }
+  }
+
+  /* Hover changes button color */
+  &:hover {
+    background-color: $buttonColorHover;
+    border-color: $outlineColorHover;
+  }
+
+  /* Hover changes text color */
+  &:hover .button-text {
+    color: $fontColorHover;
+
+    /* Hover makes arrow appear */
+    &:after {
+      margin-left: 8px;
+      opacity: 1;
+    }
+  }
+}

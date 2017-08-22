@@ -11,6 +11,8 @@
 			<action method="addCss"><stylesheet>css/bootstrap/bootstrap.min.css</stylesheet></action>
 			<action method="addCss"><stylesheet>css/bootstrap/bootstrap-theme.min.css</stylesheet></action>
 			<action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
+			<action method="addCss"><stylesheet>scss/styles.scss</stylesheet></action>
+			<action method="addCss"><stylesheet>css/hover/hover-min.css</stylesheet></action>
 
 
 			<!-- Adding JS -->
@@ -30,9 +32,9 @@
 
 		<reference name="header">
 			<block type="core/template" method="addblock" as="slider" name="slider" template="" after="-">
-
 			</block>
 		</reference>
+
 
 	</default>
 </layout>
