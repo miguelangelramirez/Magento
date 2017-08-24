@@ -42,6 +42,96 @@ span.welcome-msg.top-msg {
 	padding: 0 0 0 5px;
 }
 
+/*Navigation*/
+/* Navbar */
+.navbar {
+	border:0 none;
+	border-radius:0;
+	margin:0 0 0 10px !important ;
+	border-bottom:3px solid #E7E7E7;
+}
+.navbar .navbar-form {
+	padding-right:10px;
+}
+.navbar-nav {
+}
+.navbar-default .navbar-nav > li:hover > a {
+	background:#fff;
+	box-shadow:0 6px 12px rgba(0,0,0,0.176);
+}
+.navbar ul.level0,.navbar ul.level1 {
+	display:none;
+	text-align:left;
+}
+.navbar .dropdown-menu {
+	border:0;
+}
+.navbar ul.level1 {
+	left:150px;
+	top:0;
+}
+.navbar-nav > li {
+	display:inline-block;
+}
+.navbar-brand, .navbar-nav > li > a {
+    padding-right: 0 !important;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent !important;
+}
+.dropdown-menu::before {
+	border-bottom: 9px solid #FFFFFF;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	content: "";
+	display: inline-block;
+	left: 20px;
+	position: absolute;
+	top: -9px;
+	/*-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
+}
+/*.dropdown-menu::after {
+	border-bottom: 8px solid #FFFFFF;
+	border-left: 9px solid rgba(0, 0, 0, 0);
+	border-right: 9px solid rgba(0, 0, 0, 0);
+	content: "";
+	display: inline-block;
+	left: 86px;
+	position: absolute;
+	top: -7px;
+	color: white; 
+	background-color: white; 
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Content Body*/
 .main-container {
 	margin: 10px 0; 
@@ -118,7 +208,7 @@ span.welcome-msg.top-msg {
 
 /*Main Menu*/
 div#header1-menu {
-    margin: 10px 0 10px;
+    margin: 10px 0 0;
 }
 
 #header1-menu .nav-container ul#nav {

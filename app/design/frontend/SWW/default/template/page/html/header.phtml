@@ -62,8 +62,23 @@
                         <?php echo $this->getChildHtml('topSearch') ?>
                         <?php echo $this->getChildHtml('store_language') ?>
                     </div>
-                    <div id="header1-menu" class="no-pad-right pull-right col-lg-12 col-md-9">
-                        <?php echo $this->getChildHtml('topMenu') ?>
+                    <div id="header1-menu" class="no-pad-right pull-right">
+                        <nav class="navbar navbar-light navbar-main" role="navigation">
+                                
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                            <span class="sr-only"><?php echo $this->__('Toggle Navigation') ?></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="collapse navbar-collapse navbar-main-collapse no-pad-right">
+                                        <?php echo $this->getChildHtml('topMenu') ?>
+                                    </div>
+                                
+                           
+                        </nav>
                     </div>
                 </div>
 
@@ -73,14 +88,11 @@
 
 
 
-
-
     </div>
 </header>
 <!-- Inserting Owl Carousel -->
-
 <?php 
     if ($this->getIsHomePage()) {
-        echo "<div class='container'>" . $this->getLayout()->createBlock('cms/block')->setBlockId('slider1')->toHtml() . "</div>"; 
+        // echo "<div class='container'>" . $this->getLayout()->createBlock('cms/block')->setBlockId('slider1')->toHtml() . "</div>"; 
     }
-?>  
+?>
