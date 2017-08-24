@@ -7,7 +7,21 @@ downloader
 # downloader/cache.cfg
 # downloader/connect.cfg
 
+
+errors
+errors/*
+
+includes
+includes/*
+
+lib
+lib/*
+
+shell
+shell/*
+
 # All of the var folders can be excluded.
+var
 var/*
 !var/.htaccess
 var/cache
